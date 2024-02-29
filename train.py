@@ -13,7 +13,7 @@ def train_yolov8(data_yaml, model_weights, img_size=640, epochs=20, batch_size=8
     - batch_size: Batch size for training.
     """
     # Construct the command to run the training
-    train_cmd = f"yolo task=detect mode=train epochs={epochs} data={data_yaml} model={model_weights} imgsz={img_size} batch={batch_size}"
+    train_cmd = f"yolo task=segment mode=train epochs={epochs} data={data_yaml} model={model_weights} imgsz={img_size} batch={batch_size}"
     
     # Execute the training command
     try:

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['Axe', 'Gun', 'Knife']
+
+roboflow:
+  workspace: individualproject
+  project: weapon-segmentation-598p1
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/individualproject/weapon-segmentation-598p1/dataset/1
